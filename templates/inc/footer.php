@@ -1,6 +1,6 @@
 
         <footer class="container">
-            <p>&copy; Company 2017-2020</p>
+            <p>&copy; Company 2020</p>
         </footer>
         
     </body>
