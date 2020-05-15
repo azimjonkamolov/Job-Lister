@@ -6,14 +6,14 @@
     
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="https://github.com/mynameisone/Ecom/raw/master/images/Phoenix.png?raw=true"/>
+    <link rel="shortcut icon" href="img/Phoenix.png"/>
     <title>Job Lister</title>
 </head>
     <body>
 
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
-    <a class="navbar-brand" href="index.php"> | <img src="Phoenix.png" style="height: 40px;"> <?php echo SITE_TITLE; ?> By AK  |</a>
+    <a class="navbar-brand" href="index.php"> | <img src="img/Phoenix.png" style="height: 40px;"> <?php echo SITE_TITLE; ?> By AK  |</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>

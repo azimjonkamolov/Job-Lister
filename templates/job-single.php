@@ -1,7 +1,9 @@
 <?php   include "inc/header.php";   ?>
 <?php 
     session_start();
-    $id = $_GET['id']; 
+    $id = $_GET['id'];
+    
+    $_SESSION['id'] = $id;
 ?>
 
 <br><br>
@@ -23,7 +25,10 @@
 <?php
     while($row= mysqli_fetch_assoc($results))
     {
+        $_SESSION['id'] = $row['id'];
 ?>
+
+    
     <h2 class="page-header"><?php echo $row['job_title'];  ?></h2>
 
     <small>Posted by <?php echo $row['contact_user'];  ?> on <?php echo $row['post_date'];  ?> </small>
@@ -42,16 +47,28 @@
 
     </ul>
 
-    <?php   } // WHILE ENDS HERE   ?>
+
 
     <br><br>
 
     <a class="btn btn-dark" href="index.php"> Go back </a>
 
+    <br><br><br>
+
+    <div class="well">
+
+
+        <a href="helpers/edit.php" class="btn btn-secondary" style="padding-right: 20px; padding-left: 20px;">Edit</a>
+        <a href="helpers/delete.php" class="btn btn-danger" >Delete</a>
+
+
+    </div>
+
     <br><br><br><br>
 
 </div>
 
+<?php   } // WHILE ENDS HERE   ?>
 
 <hr>
 
