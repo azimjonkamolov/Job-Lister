@@ -6,7 +6,8 @@
     
     <link rel="stylesheet" href="https://getbootstrap.com/docs/4.5/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://github.com/mynameisone/Ecom/raw/master/images/Phoenix.png?raw=true"/>
+    <title>Job Lister</title>
 </head>
     <body>
 
