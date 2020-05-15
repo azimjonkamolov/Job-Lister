@@ -47,6 +47,7 @@
             return $row;
         }
 
+        // GET JOB FOR ONE PAGE [NOT WORIKNG]
         public function getJob($id)
         {
             $this->db->query("SELECT * FROM jobs WHERE id= :id");
@@ -55,6 +56,35 @@
             return $row;
         }
 
+        // INSERT INTO JOB TABLE
+        public function create($data)
+        {
+            // QUERY
+            $val = "INSERT INTO jobs (category_id, job_title, company, description, location, salary, ";
+            $val .= "contact_user, contact_email) VALUES (:category_id, :job_title, :company, :description, ";
+            $val .= ":location, :salary, :contact_user, :contact_email)";
+            $this->db->query($val);
+
+            // BIND
+            $this->db->bind(':category_id', $data['category_id']);
+            $this->db->bind(':job_title', $data['job_title']);
+            $this->db->bind(':company', $data['company']);
+            $this->db->bind(':description', $data['description']);
+            $this->db->bind(':location', $data['location']);
+            $this->db->bind(':salary', $data['salary']);
+            $this->db->bind(':contact_user', $data['contact_user']);
+            $this->db->bind(':contact_email', $data['contact_email']);
+
+            if($this->db->execute())
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+
+        }
         
 
 

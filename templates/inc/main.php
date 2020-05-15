@@ -2,8 +2,9 @@
 <div class="jumbotron">
         <div class="container">
         <br><br><br>
-        <h1 class="display-3">Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+        <h1 class="display-3">Hello, Vacancies ^^!</h1>
+        <p>This is a website were you can find reliable jobs and can contact with companies and our future 
+        goal is to create app and make this one of the main job search platforms in the World!. We wish you the best luck to find your dream job with a little help of us ^^.</p>
         <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
         <form method="GET" action="index.php" style="text-align: center;">
         <!-- class="form-inline my-2 my-lg-0" << class for form -->
@@ -20,5 +21,7 @@
             </select>
 
         </form>
+
+        <?php displayMessage() ?>
         </div>
     </div>

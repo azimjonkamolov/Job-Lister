@@ -4,7 +4,7 @@
     $id = $_GET['id']; 
 ?>
 
-<br><br><br><br><br><br>
+<br><br>
 
 <?php
 
