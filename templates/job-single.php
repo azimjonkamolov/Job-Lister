@@ -42,7 +42,7 @@
         </li>
         <li class="list-group-item"> <strong> Company: </strong> <?php echo $row['company'];  ?> </li>
         <li class="list-group-item"> <strong> Salary: </strong> <?php echo $row['salary'];  ?> </li>
-        <li class="list-group-item"> <strong> Contact email: </strong> <?php echo $row['contact_email'];  ?> </li>
+        <li class="list-group-item"> <strong> Contact email: </strong> <a href = "mailto:webmaster@example.com">  <?php echo $row['contact_email'];  ?> </a> </li>
         <li class="list-group-item"> <strong> Location: </strong> <?php echo $row['location'];  ?> </li>
 
     </ul>
